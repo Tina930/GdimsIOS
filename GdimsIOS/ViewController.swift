@@ -19,12 +19,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    git init
-    git add .
-    git commit -m "first commit"
-    git remote add origin https://github.com/Tina930/GdimsIOS.git
-    git push -u origin master
+
 
 }
 
