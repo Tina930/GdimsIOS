@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.5.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - ObjectMapper (2.2.8)
+  - SwiftyDrop (3.0.3)
+
+DEPENDENCIES:
+  - AlamofireObjectMapper
+  - SwiftyDrop (~> 3.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
+  SwiftyDrop: 785f95aabc26c4d832576bb78dc4ba7d0594a95b
+
+PODFILE CHECKSUM: c83255d3155909e0c40f5fd6fbbd6f28c86fcd98
+
+COCOAPODS: 1.3.1

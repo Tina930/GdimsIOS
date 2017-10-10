@@ -13,9 +13,13 @@
 		A04CC1A41F8CB0F100446FA8 /* GdimsIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A04CC1A21F8CB0F100446FA8 /* GdimsIOS.xcdatamodeld */; };
 		A04CC1A61F8CB0F100446FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04CC1A51F8CB0F100446FA8 /* Assets.xcassets */; };
 		A04CC1A91F8CB0F100446FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04CC1A71F8CB0F100446FA8 /* LaunchScreen.storyboard */; };
+		E6CFA931CFBAF0950250F8AE /* Pods_GdimsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102331789847C291BB1A0FC3 /* Pods_GdimsIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		102331789847C291BB1A0FC3 /* Pods_GdimsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GdimsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F20F196F08D537F058C236 /* Pods-GdimsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GdimsIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GdimsIOS/Pods-GdimsIOS.release.xcconfig"; sourceTree = "<group>"; };
+		60564E40F577D9C3C075C7EA /* Pods-GdimsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GdimsIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GdimsIOS/Pods-GdimsIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A04CC1981F8CB0F100446FA8 /* GdimsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdimsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04CC19B1F8CB0F100446FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04CC19D1F8CB0F100446FA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6CFA931CFBAF0950250F8AE /* Pods_GdimsIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C68940C10DABB066222F43E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60564E40F577D9C3C075C7EA /* Pods-GdimsIOS.debug.xcconfig */,
+				31F20F196F08D537F058C236 /* Pods-GdimsIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A04CC18F1F8CB0F100446FA8 = {
 			isa = PBXGroup;
 			children = (
 				A04CC19A1F8CB0F100446FA8 /* GdimsIOS */,
 				A04CC1991F8CB0F100446FA8 /* Products */,
+				5C68940C10DABB066222F43E /* Pods */,
+				EB4403397734063EE4203600 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = GdimsIOS;
 			sourceTree = "<group>";
 		};
+		EB4403397734063EE4203600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				102331789847C291BB1A0FC3 /* Pods_GdimsIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A04CC1AD1F8CB0F100446FA8 /* Build configuration list for PBXNativeTarget "GdimsIOS" */;
 			buildPhases = (
+				F2DFCF458A88DF2DB682EDE9 /* [CP] Check Pods Manifest.lock */,
 				A04CC1941F8CB0F100446FA8 /* Sources */,
 				A04CC1951F8CB0F100446FA8 /* Frameworks */,
 				A04CC1961F8CB0F100446FA8 /* Resources */,
+				869BF6190AC062E5DF34BC0D /* [CP] Embed Pods Frameworks */,
+				65FB89A41B3FDF5399E8CE62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65FB89A41B3FDF5399E8CE62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GdimsIOS/Pods-GdimsIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		869BF6190AC062E5DF34BC0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GdimsIOS/Pods-GdimsIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyDrop/SwiftyDrop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyDrop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GdimsIOS/Pods-GdimsIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2DFCF458A88DF2DB682EDE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GdimsIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A04CC1941F8CB0F100446FA8 /* Sources */ = {
@@ -276,6 +363,7 @@
 		};
 		A04CC1AE1F8CB0F100446FA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60564E40F577D9C3C075C7EA /* Pods-GdimsIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,11 +374,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/qingsong/xcode/GdimsIOS/Pods/**";
 			};
 			name = Debug;
 		};
 		A04CC1AF1F8CB0F100446FA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F20F196F08D537F058C236 /* Pods-GdimsIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +391,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/qingsong/xcode/GdimsIOS/Pods/**";
 			};
 			name = Release;
 		};
