@@ -4,6 +4,7 @@ use_frameworks!
 target ‘GdimsIOS’ do
         pod 'AlamofireObjectMapper' 
         pod 'SwiftyDrop', '~>3.0'
+	pod  'ObjectMapper+Realm'
 end
 
 post_install do |installer|
