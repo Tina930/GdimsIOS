@@ -173,13 +173,62 @@
                     <view key="view" contentMode="scaleToFill" id="qcZ-v0-9gY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1s-YN-kGh">
+                                <rect key="frame" x="0.0" y="17" width="375" height="44"/>
+                                <color key="barTintColor" red="0.08235294118" green="0.81960784310000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="群测群防" id="Pyc-uO-wGS"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2r-Gh-3Cs">
+                                <rect key="frame" x="16" y="81" width="165" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="DxQ-bA-JgC"/>
+                                    <constraint firstAttribute="width" constant="165" id="XgD-DI-2q6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9VX-YP-BZ9">
+                                <rect key="frame" x="16" y="246" width="165" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVo-4K-5ma">
+                                <rect key="frame" x="194" y="81" width="165" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="2Wh-fR-Alz"/>
+                                    <constraint firstAttribute="height" constant="150" id="xPc-n4-cor"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzi-OT-I93">
+                                <rect key="frame" x="194" y="246" width="165" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="q3x-E7-Dxa" firstAttribute="top" secondItem="C1s-YN-kGh" secondAttribute="top" constant="3" id="06L-Gk-VIu"/>
+                            <constraint firstItem="lVo-4K-5ma" firstAttribute="leading" secondItem="d2r-Gh-3Cs" secondAttribute="trailing" constant="13" id="1zt-vL-2Iw"/>
+                            <constraint firstItem="q3x-E7-Dxa" firstAttribute="trailing" secondItem="lVo-4K-5ma" secondAttribute="trailing" constant="16" id="2Gp-Yp-HdJ"/>
+                            <constraint firstItem="q3x-E7-Dxa" firstAttribute="trailing" secondItem="C1s-YN-kGh" secondAttribute="trailing" id="E2d-km-McR"/>
+                            <constraint firstItem="lVo-4K-5ma" firstAttribute="top" secondItem="C1s-YN-kGh" secondAttribute="bottom" constant="20" id="K1w-Ag-rmc"/>
+                            <constraint firstItem="C1s-YN-kGh" firstAttribute="leading" secondItem="q3x-E7-Dxa" secondAttribute="leading" id="N2n-DS-OgP"/>
+                            <constraint firstItem="d2r-Gh-3Cs" firstAttribute="top" secondItem="C1s-YN-kGh" secondAttribute="bottom" constant="20" id="a5A-r3-VXi"/>
+                            <constraint firstItem="d2r-Gh-3Cs" firstAttribute="leading" secondItem="q3x-E7-Dxa" secondAttribute="leading" constant="16" id="oOU-js-2ak"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="q3x-E7-Dxa"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vu8-PK-uS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="117"/>
+            <point key="canvasLocation" x="821.60000000000002" y="116.49175412293854"/>
         </scene>
     </scenes>
     <resources>
