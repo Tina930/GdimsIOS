@@ -13,6 +13,8 @@
 		A04CC1A41F8CB0F100446FA8 /* GdimsIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A04CC1A21F8CB0F100446FA8 /* GdimsIOS.xcdatamodeld */; };
 		A04CC1A61F8CB0F100446FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04CC1A51F8CB0F100446FA8 /* Assets.xcassets */; };
 		A04CC1A91F8CB0F100446FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04CC1A71F8CB0F100446FA8 /* LaunchScreen.storyboard */; };
+		A0CE2A731F8E17A0004E5D22 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE2A721F8E17A0004E5D22 /* BaseModel.swift */; };
+		A0CE2A751F8E17E9004E5D22 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE2A741F8E17E9004E5D22 /* InfoModel.swift */; };
 		E6CFA931CFBAF0950250F8AE /* Pods_GdimsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102331789847C291BB1A0FC3 /* Pods_GdimsIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		A04CC1A51F8CB0F100446FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04CC1A81F8CB0F100446FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A04CC1AA1F8CB0F100446FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0CE2A721F8E17A0004E5D22 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		A0CE2A741F8E17E9004E5D22 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				A04CC1A71F8CB0F100446FA8 /* LaunchScreen.storyboard */,
 				A04CC1AA1F8CB0F100446FA8 /* Info.plist */,
 				A04CC1A21F8CB0F100446FA8 /* GdimsIOS.xcdatamodeld */,
+				A0CE2A721F8E17A0004E5D22 /* BaseModel.swift */,
+				A0CE2A741F8E17E9004E5D22 /* InfoModel.swift */,
 			);
 			path = GdimsIOS;
 			sourceTree = "<group>";
@@ -190,7 +196,7 @@
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyDrop/SwiftyDrop.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -200,7 +206,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyDrop.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -232,8 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CE2A751F8E17E9004E5D22 /* InfoModel.swift in Sources */,
 				A04CC1A41F8CB0F100446FA8 /* GdimsIOS.xcdatamodeld in Sources */,
 				A04CC19E1F8CB0F100446FA8 /* ViewController.swift in Sources */,
+				A0CE2A731F8E17A0004E5D22 /* BaseModel.swift in Sources */,
 				A04CC19C1F8CB0F100446FA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
