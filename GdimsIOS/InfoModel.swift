@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class InfoModel:Mappable{
+class InfoModel: Mappable{
     
     var monAngle:String?
     var monPointName:String?
@@ -31,7 +31,6 @@ class InfoModel:Mappable{
     required init?(map: Map) {
         
     }
-    
     
     func mapping(map: Map) {
         monAngle <- map["monAngle"]
