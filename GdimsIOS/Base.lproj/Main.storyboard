@@ -178,16 +178,16 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Homepage View-->
         <scene sceneID="kEt-1Z-TT9">
             <objects>
-                <viewController id="0ZG-n6-JMX" sceneMemberID="viewController">
+                <viewController restorationIdentifier="HomepageView" storyboardIdentifier="HomepageView" id="0ZG-n6-JMX" customClass="HomepageView" customModule="GdimsIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qcZ-v0-9gY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1s-YN-kGh">
-                                <rect key="frame" x="0.0" y="17" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <color key="barTintColor" red="0.08235294118" green="0.81960784310000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -198,7 +198,7 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-uE-Cqv">
-                                <rect key="frame" x="10" y="81" width="355" height="100"/>
+                                <rect key="frame" x="10" y="84" width="355" height="100"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="disaster" translatesAutoresizingMaskIntoConstraints="NO" id="QbB-Ao-0xK">
                                         <rect key="frame" x="8" y="10" width="80" height="80"/>
@@ -237,7 +237,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zU1-fb-6Ro">
-                                <rect key="frame" x="10" y="193" width="355" height="100"/>
+                                <rect key="frame" x="10" y="196" width="355" height="100"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GPS" translatesAutoresizingMaskIntoConstraints="NO" id="dFG-JF-cEj">
                                         <rect key="frame" x="8" y="10" width="80" height="80"/>
@@ -276,7 +276,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJi-fU-NoH">
-                                <rect key="frame" x="10" y="305" width="355" height="100"/>
+                                <rect key="frame" x="10" y="308" width="355" height="100"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="U04-nI-mmq">
                                         <rect key="frame" x="8" y="10" width="80" height="80"/>
@@ -322,7 +322,7 @@
                             <constraint firstItem="yJi-fU-NoH" firstAttribute="leading" secondItem="q3x-E7-Dxa" secondAttribute="leading" constant="10" id="JNg-kq-2RF"/>
                             <constraint firstItem="q3x-E7-Dxa" firstAttribute="trailing" secondItem="EuS-uE-Cqv" secondAttribute="trailing" constant="10" id="NdK-vC-rxB"/>
                             <constraint firstItem="q3x-E7-Dxa" firstAttribute="trailing" secondItem="zU1-fb-6Ro" secondAttribute="trailing" constant="10" id="R54-Gg-6cL"/>
-                            <constraint firstItem="C1s-YN-kGh" firstAttribute="top" secondItem="qcZ-v0-9gY" secondAttribute="topMargin" constant="-3" id="TqD-Dd-S5r"/>
+                            <constraint firstItem="C1s-YN-kGh" firstAttribute="top" secondItem="qcZ-v0-9gY" secondAttribute="topMargin" id="TqD-Dd-S5r"/>
                             <constraint firstAttribute="trailing" secondItem="C1s-YN-kGh" secondAttribute="trailing" id="hY1-86-16R"/>
                             <constraint firstItem="EuS-uE-Cqv" firstAttribute="leading" secondItem="q3x-E7-Dxa" secondAttribute="leading" constant="10" id="qyP-ws-IVX"/>
                             <constraint firstItem="zU1-fb-6Ro" firstAttribute="leading" secondItem="q3x-E7-Dxa" secondAttribute="leading" constant="10" id="tGf-fN-9eH"/>

@@ -95,6 +95,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         else{
                             self.view.hideToastActivity()
                             self.view.makeToast("登录成功", duration: 1, position: .center)
+                            //跳转页面
+                            let sb = UIStoryboard(name: "Main", bundle: nil)
+                            let vc = sb.instantiateViewController(withIdentifier: "HomepageView") as! HomepageView
+                            self.present(vc, animated: true, completion: nil)
                         }
                     }else{
                         self.view.makeToast("没有查到该号码对应的群测群防人员", duration: 1, position: .center)

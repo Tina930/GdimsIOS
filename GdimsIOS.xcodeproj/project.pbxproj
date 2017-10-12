@@ -10,6 +10,7 @@
 		681A3D151F8E2AA400C90372 /* UserDefaultUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681A3D141F8E2AA400C90372 /* UserDefaultUtils.swift */; };
 		681A3D171F8E2D3500C90372 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681A3D161F8E2D3500C90372 /* Api.swift */; };
 		68F472F31F8EF9FD000EE189 /* InfoRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F472F21F8EF9FD000EE189 /* InfoRealm.swift */; };
+		A02743D41F8F0D6500CD469C /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02743D31F8F0D6500CD469C /* HomepageView.swift */; };
 		A04CC19C1F8CB0F100446FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04CC19B1F8CB0F100446FA8 /* AppDelegate.swift */; };
 		A04CC19E1F8CB0F100446FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04CC19D1F8CB0F100446FA8 /* ViewController.swift */; };
 		A04CC1A11F8CB0F100446FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04CC19F1F8CB0F100446FA8 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		681A3D141F8E2AA400C90372 /* UserDefaultUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtils.swift; sourceTree = "<group>"; };
 		681A3D161F8E2D3500C90372 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		68F472F21F8EF9FD000EE189 /* InfoRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRealm.swift; sourceTree = "<group>"; };
+		A02743D31F8F0D6500CD469C /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 		A04CC1981F8CB0F100446FA8 /* GdimsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdimsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04CC19B1F8CB0F100446FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04CC19D1F8CB0F100446FA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A02743D01F8F0CF500CD469C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A02743D31F8F0D6500CD469C /* HomepageView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A02743D11F8F0D0200CD469C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				681A3D161F8E2D3500C90372 /* Api.swift */,
+				681A3D141F8E2AA400C90372 /* UserDefaultUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		A02743D21F8F0D2F00CD469C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				68F472F21F8EF9FD000EE189 /* InfoRealm.swift */,
+				A0CE2A741F8E17E9004E5D22 /* InfoModel.swift */,
+				A0CE2A721F8E17A0004E5D22 /* BaseModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		A04CC18F1F8CB0F100446FA8 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +111,9 @@
 		A04CC19A1F8CB0F100446FA8 /* GdimsIOS */ = {
 			isa = PBXGroup;
 			children = (
+				A02743D21F8F0D2F00CD469C /* model */,
+				A02743D11F8F0D0200CD469C /* utils */,
+				A02743D01F8F0CF500CD469C /* view */,
 				A04CC19B1F8CB0F100446FA8 /* AppDelegate.swift */,
 				A04CC19D1F8CB0F100446FA8 /* ViewController.swift */,
 				A04CC19F1F8CB0F100446FA8 /* Main.storyboard */,
@@ -89,11 +121,6 @@
 				A04CC1A71F8CB0F100446FA8 /* LaunchScreen.storyboard */,
 				A04CC1AA1F8CB0F100446FA8 /* Info.plist */,
 				A04CC1A21F8CB0F100446FA8 /* GdimsIOS.xcdatamodeld */,
-				A0CE2A721F8E17A0004E5D22 /* BaseModel.swift */,
-				A0CE2A741F8E17E9004E5D22 /* InfoModel.swift */,
-				681A3D141F8E2AA400C90372 /* UserDefaultUtils.swift */,
-				681A3D161F8E2D3500C90372 /* Api.swift */,
-				68F472F21F8EF9FD000EE189 /* InfoRealm.swift */,
 			);
 			path = GdimsIOS;
 			sourceTree = "<group>";
@@ -247,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02743D41F8F0D6500CD469C /* HomepageView.swift in Sources */,
 				681A3D151F8E2AA400C90372 /* UserDefaultUtils.swift in Sources */,
 				A0CE2A751F8E17E9004E5D22 /* InfoModel.swift in Sources */,
 				A04CC1A41F8CB0F100446FA8 /* GdimsIOS.xcdatamodeld in Sources */,
